@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.centered {
+    text-align: center;
+}
+.fade-in { /*Fade in animation*/
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+@keyframes fadeIn { /*Fade in animation*/
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes moveToTopLeft {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(-153.8%, -145%) scale(0.3); }/*移動到網頁第二頁面的右上角*/
+}
+
+#myImage.moving {
+    animation: moveToTopLeft 1s forwards;
+    position: top left;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+    body {
+        /* Adjust styles for mobile here */
+        font-size: 14px;
+    }
+}
+
+/* For tablet screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        /* Adjust styles for tablet here */
+        font-size: 18px;
+    }
+}
+
+/* For laptop screens */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        /* Adjust styles for laptop here */
+        font-size: 20px;
+    }
+}
+
+/* For desktop screens */
+@media only screen and (min-width: 1441px) {
+    body {
+        /* Adjust styles for desktop here */
+        font-size: 22px;
+    }
+}
