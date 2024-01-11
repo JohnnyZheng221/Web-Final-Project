@@ -1,0 +1,55 @@
+/* Styles for the body element */
+body {
+    /* Display the body as a flex container */
+    display: flex;
+    /* Arrange the direct children of body in a column */
+    flex-direction: column;
+    /* Center the direct children of body vertically */
+    justify-content: center;
+    /* Center the direct children of body horizontally */
+    align-items: center;
+    /* Set the minimum height of the body to the full viewport height */
+    min-height: 100vh;
+    /* Remove default margins */
+    margin: 0;
+    /* Set the text alignment to center */
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+/* Styles for the 'About Us' section */
+#about-us {
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Footer styles */
+footer 
+{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Styles for the 'About Us' section */
+#about-us {
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Style for unvisited link */
+#about-us a:link {
+    color: blue;
+}
+
+/* Style for visited link */
+#about-us a:visited {
+    color: purple;
+}
