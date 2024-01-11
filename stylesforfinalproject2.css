@@ -1,0 +1,134 @@
+/* General body styles */
+body 
+{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    animation: fadeIn 2s;
+}
+
+.main-content {
+    margin-bottom: 50px; /*For the bottom of the main content*/
+}
+
+/* Fade-in animation */
+@keyframes fadeIn 
+{
+    0% {opacity: 0;} /* Start with 0 opacity */
+    100% {opacity: 1;} /* End with 1 opacity */
+}
+/* Header styles */
+h2 
+{
+    color: #333;
+}
+
+/* List styles */
+ol 
+{
+    margin-left: 20px;
+}
+
+#LaNinaimg {
+    width: 400px; 
+    height: 400px;
+    display: block; /* Make the image a block element */
+    margin-left: auto; /* Center the image */
+    margin-right: auto;
+    size-adjust: auto;
+}
+.caption {
+    font-size: 14px;
+    color: black;
+    text-align: center; /* Center the caption */
+}
+
+/* Styles for #ghg and #ghg-info */
+#ghg {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#ghg:visited {
+    color: purple;
+}
+
+#ghg-info {
+    display: none;
+}
+a, a:link {
+    color: blue;
+  }
+a:visited{
+    color: purple;
+}
+/* Change the scrollbar track */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Change the scrollbar thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/*Change the scrollbar thumb when it's hovered */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Footer styles */
+footer 
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 0px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
+
+#myImage.moved {
+    width: 70px;
+    height: auto;
+}
+
+/* Add the search box 的位置 */
+.search-container 
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] 
+{
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+}
+
+.search-container button 
+{
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
