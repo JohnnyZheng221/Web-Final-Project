@@ -20,8 +20,3 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-// When user clicks button, scroll to top of page
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
