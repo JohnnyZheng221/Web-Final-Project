@@ -6,8 +6,3 @@ document.getElementById("myImage").onclick = function() {
         window.location.href = "FinalProject2/FinalProject2.html";
     }, 1000);
     this.classList.add('moved');  
-    
-document.getElementById('ghg').addEventListener('click', function() {
-    document.getElementById('ghg-info').style.display = 'block';
-    this.classList.add('clicked');
-});} // Creating ghg tag so that if the users want to know what it is. 
